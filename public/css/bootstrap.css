@@ -44,7 +44,10 @@ html {
 }
 
 body {
-  margin: 0;
+  display:block;
+  background-color: red;
+  height:400px;
+  width:400px;
 }
 
 a {
