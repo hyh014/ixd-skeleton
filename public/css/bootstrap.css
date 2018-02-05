@@ -45,9 +45,6 @@ html {
 
 body {
   display:block;
-  background-color: red;
-  height:400px;
-  width:400px;
 }
 
 a {
@@ -2252,7 +2249,7 @@ textarea.input-lg {
   }
 }
 
-.btn {
+.1 {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
