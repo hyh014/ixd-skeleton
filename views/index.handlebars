@@ -18,10 +18,14 @@
 <button type="button" class="col-xs-offset-5">Log Off</button>
 <body>
 	<h1 style="text-align:center" class="page-header">HOME</h1>
-	<button type="button"  class=" center-block btn-lg btn-primary">Create New Entry</button>
-	<button type="button" class=" center-block btn btn-default ">Edit Anxiety Level</button>
-	<button type="button" class="center-block btn btn-active ">View Diary</button>
-	<button type="button" class="center-block btn btn-warning ">Show Statistics</button>
-	<button type="button" class="center-block btn btn-hover ">Settings</button>
+
+	{{#each tabs}}
+	<div class="tab" align="Center">
+	<a href="/tab/{{id}}" >
+	<button type="button"  class=" btn-lg btn-primary" id="{{id}}">{{name}}</button>
+	</a>
+</div>
+<br />
+	{{/each}}
 </body>
 </html>
