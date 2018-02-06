@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{tabName}}</title>
+    <title>Food Diary App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
   </head>
   <body>
-    <h1>Entry</h1>
+
+    <h1 class="page-header text-center" >Log Your Meal</h1>
     <script src="https://code.jquery.com/jquery.js"></script>
      <script src="/js/bootstrap.min.js"></script>
+     <div class="pull-left  col-xs-offset-5"  id="photo">
+
+       <button type="button"  class="btn-primary">Take Picture</button><br/>
+        <button type="button" class="btn-info">View Pictures</button><br/>
+        <p class="help-block" id="clock" ></p>
+     </div>
+
+     <div class="pull left  col-xs-offset-6"  id="text input">
+       <text style="">Enter food<text><br/>
+         <input type="text" class="row"></input><br />
+         <text>Comments:</text><br/>
+       <textarea class="row"></textarea><br/>
+     </div>
+     <div class="pull left  col-xs-offset-5"  id="Rating">
+       <text class="Text-input">Taste:</text>
+       <label for="Taste">1<br />
+          <input type="radio" name="taste" value="1"></input>
+       </label>
+       <label for="Taste">2<br />
+          <input type="radio" name="taste" value="2"></input>
+       </label>
+       <label for="Taste">3<br />
+          <input type="radio" name="taste" value="3"></input>
+       </label>
+       <text class="Text-input">Health:</text><br />
+       <text class="Text-input">Mood:</text>
+     </div><br/>
+     <div class="container" id="button">
+     </div>
   </body>
+  <script src="/js/DisplayClock.js"></script>
 </html>

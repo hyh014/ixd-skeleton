@@ -8,7 +8,7 @@ exports.view = function(req, res){
     "tabs": [
       { "name": "Create New Entry",
         "id": "entry"},
-      { "name": "Edit Anxiety Level",
+      { "name": "Anxiety",
         "id": "anxiety"},
       { "name": "View Diary",
         "id": "diary"},
