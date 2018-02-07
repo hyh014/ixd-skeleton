@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 
   </head>
@@ -13,35 +14,65 @@
     <h1 class="page-header text-center" >Log Your Meal</h1>
     <script src="https://code.jquery.com/jquery.js"></script>
      <script src="/js/bootstrap.min.js"></script>
-     <div class="pull-left  col-xs-offset-5"  id="photo">
-
-       <button type="button"  class="btn-primary">Take Picture</button><br/>
-        <button type="button" class="btn-info">View Pictures</button><br/>
+     <div class="pull-left  col-xs-offset-5" id="photo">
+       <a href='#'><span class="glyphicon glyphicon-camera" style="font-size:100px;"></span></a><br/>
+        <a href='#' class="btn-info btn-lg" role="button">View Pictures</a><br/>
         <p class="help-block" id="clock" ></p>
      </div>
 
-     <div class="pull left  col-xs-offset-6"  id="text input">
-       <text style="">Enter food<text><br/>
-         <input type="text" class="row"></input><br />
-         <text>Comments:</text><br/>
-       <textarea class="row"></textarea><br/>
-     </div>
-     <div class="pull left  col-xs-offset-5"  id="Rating">
-       <text class="Text-input">Taste:</text>
-       <label for="Taste">1<br />
-          <input type="radio" name="taste" value="1"></input>
-       </label>
-       <label for="Taste">2<br />
-          <input type="radio" name="taste" value="2"></input>
-       </label>
-       <label for="Taste">3<br />
-          <input type="radio" name="taste" value="3"></input>
-       </label>
-       <text class="Text-input">Health:</text><br />
-       <text class="Text-input">Mood:</text>
+     <div class="col-xs-offset-6"  id="text input">
+        <input type="text" class="row" placeholder="Enter food"></input><br />
+       <textarea rows="8" cols="25" class="row"style="resize:none;"placeholder="Comments:"></textarea><br/>
      </div><br/>
-     <div class="container" id="button">
-     </div>
+     <div class=" col-xs-offset-5"  id="Rating">
+       <fieldset id="Taste">
+         <text class="Text-input">Taste:</text><br/>
+         <div class="rating" style="width:14%;">
+             <span><input type="radio" name="taste" id="t3" value="3"><label for="t3">☺</label></span>
+             <span><input type="radio" name="taste" id="t2" value="2"><label for="t2">☺</label></span>
+             <span><input type="radio" name="taste" id="t1" value="1"><label for="t1">☺</label></span>
+         </div>
+       </fieldset><br/>
+       <fieldset id="Health">
+         <text class="Text-input">Health:</text><br/>
+         <div class="rating">
+             <span><input type="radio" name="health" id="h5" value="5"><label for="h5">★</label></span>
+             <span><input type="radio" name="health" id="h4" value="4"><label for="h4">★</label></span>
+             <span><input type="radio" name="health" id="h3" value="3"><label for="h3">★</label></span>
+             <span><input type="radio" name="health" id="h2" value="2"><label for="h2">★</label></span>
+             <span><input type="radio" name="health" id="h1" value="1"><label for="h1">★</label></span>
+         </div>
+       </fieldset><br/>
+       <fieldset id="Mood">
+         <text class="Text-input">Mood:</text><br/>
+         <div class="rating" >
+             <span><input type="radio" name="rating" id="m5" value="5"><label for="m5">★</label></span>
+             <span><input type="radio" name="rating" id="m4" value="4"><label for="m4">★</label></span>
+             <span><input type="radio" name="rating" id="m3" value="3"><label for="m3">★</label></span>
+             <span><input type="radio" name="rating" id="m2" value="2"><label for="m2">★</label></span>
+             <span><input type="radio" name="rating" id="m1" value="1"><label for="m1">★</label></span>
+         </div>
+       </fieldset><br>
+       <fieldset id="Anxiety">
+         <text class="Text-input">Anxiety:</text><br/>
+         <div class="rating" id="anxiety">
+             <span><input type="radio" name="rating" id="a5" value="10"><label id="anxiety"for="a10">★</label></span>
+             <span><input type="radio" name="rating" id="a4" value="9"><label id="anxiety"for="a9">★</label></span>
+             <span><input type="radio" name="rating" id="a3" value="8"><label id="anxiety" for="a8">★</label></span>
+             <span><input type="radio" name="rating" id="a2" value="7"><label id="anxiety" for="a7">★</label></span>
+             <span><input type="radio" name="rating" id="a1" value="6"><label id="anxiety" for="a6">★</label></span>
+             <span><input type="radio" name="rating" id="a5" value="5"><label id="anxiety" for="a5">★</label></span>
+             <span><input type="radio" name="rating" id="a4" value="4"><label id="anxiety" for="a4">★</label></span>
+             <span><input type="radio" name="rating" id="a3" value="3"><label id="anxiety" for="a3">★</label></span>
+             <span><input type="radio" name="rating" id="a2" value="2"><label id="anxiety" for="a2">★</label></span>
+             <span><input type="radio" name="rating" id="a1" value="1"><label id="anxiety" for="a1">★</label></span>
+         </div>
+       </div>
+     </fieldset><br/>
+     <a href="/">
+       <button type="button" class="btn-primary col-xs-offset-5">Back</button>
+     </a>
+     <button type="button" class="btn-primary" style="margin-left:12.6%;">Next</button>
   </body>
   <script src="/js/DisplayClock.js"></script>
 </html>
