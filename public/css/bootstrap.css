@@ -45,9 +45,12 @@ html {
 
 body {
   display:block;
+<<<<<<< HEAD
   
   height:400px;
   width:400px;
+=======
+>>>>>>> cdb6edc9703aa0462a7b3a194548f6e038ae48ee
 }
 
 a {
@@ -150,7 +153,52 @@ legend {
   padding: 0;
   border: 0;
 }
+.rating {
+    float:left;
+    width:20%;
+}
 
+.rating span { float:right; position:relative; }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:#ccc;
+    font-size:30px;
+    margin-right:2px;
+    line-height:30px;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    color:yellow;
+}
+.rating#anxiety{
+  float:left;
+  width:30%;
+}
+.rating span label#anxiety
+{
+display:inline-block;
+width:30px;
+height:30px;
+text-align:center;
+color:#FFF;
+background:#ccc;
+font-size:30px;
+margin-right:2px;
+line-height:30px;
+border-radius:50%;
+-webkit-border-radius:50%;
+}
 button,
 input,
 select,
@@ -2252,7 +2300,7 @@ textarea.input-lg {
   }
 }
 
-.btn {
+.1 {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -2618,6 +2666,7 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 
+}
 .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
@@ -3647,7 +3696,10 @@ input[type="button"].btn-block {
     left: auto;
   }
 }
-
+.bot3
+{
+  
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
