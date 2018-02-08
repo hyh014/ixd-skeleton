@@ -2660,6 +2660,7 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 
+}
 .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
@@ -3689,7 +3690,10 @@ input[type="button"].btn-block {
     left: auto;
   }
 }
-
+.bot3
+{
+  
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;

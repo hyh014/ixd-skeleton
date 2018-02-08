@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Food Diary App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <!-- Bootstrap -->
@@ -16,17 +17,27 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (blelow), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<button type="button" class="col-xs-offset-5">Log Off</button>
+<fieldset>
+	<a href="#" class="btn btn-info btn-sm col-xs-offset-5" role="button">Log Off</a>
+	<a href="#" class="btn btn-info btn-sm" role="button" style="margin-left:10%;">My Profile</a>
+</fieldset>
 <body>
 	<h1 style="text-align:center" class="page-header">HOME</h1>
-
-	{{#each tabs}}
 	<div class="tab" align="Center">
-	<a href="/tab/{{id}}" >
-	<button type="button"  class="btn-link btn-lg btn-info" id="{{id}}">{{name}}</button>
-	</a>
+	<a href="/tab/entry" class="jumbotron glyphicon glyphicon-plus btn-primary btn-lg" style="margin-bottom:5px; " role="button" id="entry"><br>Create New Entry</a><br/>
+	<div style="width:100% text-align:center">
+		<div style="display:inline-block"><a href="/tab/diary" class="btn btn-primary btn-lg " role="button" style="font-size:21.5px" id="diary">View Diary</a></div>
+		<div style="display:inline-block"><a href="/tab/anxiety" class="btn btn-primary btn-lg " role="button" style="font-size:21.5px" id="anxiety">Anxiety</a><br></div>
+</div>
+<div style="margin-top:25px; width:100%"class="container">
+	<div style="display:inline-block"><a href="/tab/stat" class=" btn-primary btn-sm" role="button" style="font-size:15.3px; padding-top:25px; padding-bottom:25px;" id="stat">Statistics</a></div>
+	<div style="display:inline-block"><a href="/tab/news" class=" btn-primary btn-sm" role="button" style="font-size:15.3px; padding-top:25px; padding-bottom:25px;" id="news">News</a></div>
+	<div style="display:inline-block"><a href="/tab/community" class=" btn-primary btn-sm" role="button" style="font-size:15.3px; padding-top:25px; padding-bottom:25px;" id="community">Community</a></div>
+</div>
+</div>
+<div style="width:100%" class="col-xs-offset-5">
+	<div style="display:inline-block"><a href="/tab/setting" class="glyphicon glyphicon-cog  " style="margin-top:60px; font-size:40px" role="button" id="setting"></a></div>
 </div>
 <br />
-	{{/each}}
 </body>
 </html>

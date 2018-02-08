@@ -15,7 +15,11 @@ exports.view = function(req, res){
       {"name": "Show Statistics",
         "id": "stat"},
       {"name": "Settings",
-        "id": "setting"}
+        "id": "setting"},
+      {"name": "Fun News",
+        "id": "news"},
+      { "name":"Community",
+        "id":"community"}
     ]
   });
 };
