@@ -45,12 +45,6 @@ html {
 
 body {
   display:block;
-<<<<<<< HEAD
-  
-  height:400px;
-  width:400px;
-=======
->>>>>>> cdb6edc9703aa0462a7b3a194548f6e038ae48ee
 }
 
 a {
@@ -183,7 +177,7 @@ legend {
 }
 .rating#anxiety{
   float:left;
-  width:30%;
+  width:40%;
 }
 .rating span label#anxiety
 {
