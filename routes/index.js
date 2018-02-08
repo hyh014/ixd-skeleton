@@ -19,7 +19,14 @@ exports.view = function(req, res){
       {"name": "Fun News",
         "id": "news"},
       { "name":"Community",
-        "id":"community"}
+        "id":"community"},
+      { "name":"Profile",
+        "id":"profile"
+      },
+      { "name":"Login",
+        "id": "login"},
+      {"name":"Help",
+        "id":"help"}
     ]
   });
 };
