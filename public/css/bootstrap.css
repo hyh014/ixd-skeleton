@@ -193,6 +193,28 @@ line-height:30px;
 border-radius:50%;
 -webkit-border-radius:50%;
 }
+@media (min-width: 768px) {
+  .rating {
+    width: 15px;
+    height:15px;
+    font-size:15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .rating {
+    width: 20px;
+    height:20px;
+    font-size:20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rating {
+    width: 25px;
+    height:25px;
+    font-size:25px;
+  }
 button,
 input,
 select,
@@ -3692,7 +3714,7 @@ input[type="button"].btn-block {
 }
 .bot3
 {
-  
+
 }
 .btn-group,
 .btn-group-vertical {
