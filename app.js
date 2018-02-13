@@ -6,7 +6,8 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+var login = require('./routes/login');
 
 var index = require('./routes/index');
 var tab = require('./routes/tab');
@@ -35,7 +36,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/index', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/tab/:name', tab.viewTab);
