@@ -26,5 +26,5 @@ if (curr_min.length == 1)
    {
    curr_min = "0" + curr_min;
    }
-return d.getMonth()+"/"+d.getDate()+"/"+d.getFullYear()+" "+curr_hour+":"+curr_min+a_p;
+return (d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear()+" "+curr_hour+":"+curr_min+a_p;
 }

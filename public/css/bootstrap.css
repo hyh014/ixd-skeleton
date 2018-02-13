@@ -163,7 +163,6 @@ legend {
     display:inline-block;
     width:30px;
     height:30px;
-    text-align:center;
     color:#ccc;
     font-size:30px;
     margin-right:2px;
@@ -177,24 +176,30 @@ legend {
 }
 .rating#anxiety{
   float:left;
-  width:40%;
+  width:30%;
+}
+.rating span input#anxiety {
+    position:absolute;
+    top:0px;
+    left:2px;
+    opacity:0;
 }
 .rating span label#anxiety
 {
 display:inline-block;
 width:30px;
 height:30px;
-text-align:center;
 color:#FFF;
 background:#ccc;
 font-size:30px;
-margin-right:2px;
+margin-right:5px;
 line-height:30px;
 border-radius:50%;
 -webkit-border-radius:50%;
 }
 @media (min-width: 768px) {
-  .rating {
+  .rating span label,
+  .rating span label#anxiety{
     width: 15px;
     height:15px;
     font-size:15px;
@@ -202,7 +207,8 @@ border-radius:50%;
 }
 
 @media (min-width: 992px) {
-  .rating {
+  .rating span label,
+  .rating span label#anxiety{
     width: 20px;
     height:20px;
     font-size:20px;
@@ -210,7 +216,8 @@ border-radius:50%;
 }
 
 @media (min-width: 1200px) {
-  .rating {
+  .rating span label,
+  .rating span label#anxiety{
     width: 25px;
     height:25px;
     font-size:25px;
