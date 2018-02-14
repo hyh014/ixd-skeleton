@@ -13,8 +13,30 @@
 
 </head>
 <body>
-
-<h1 class="page-header text-center" >Statistics</h1>
+<div id="root" class="text-center">
+	<h1 class="page-header" >Statistics</h1>
+	<table align="center" class="rating-table table-bordered table-condensed" >
+		<tr>
+			<a href="#" ><th class="text-center">Taste</th></a>
+			<th class="text-center">Health</th>
+			<th class="text-center">Mood</th>
+			<th class="text-center">Anxiety</th>
+		</tr>
+	</table>
+	<select name="date" class="col-lg-offset-2">
+		<option value="weekly">Weekly</option>
+		<option value="monthly">Monthly</option>
+		<option value="yearly">Yearly</option>
+	</select>
+	<div class="glyphicon glyphicon-calendar" style="padding-left:5px; font-size:50px"></div><br>
+	<div class="container large-box" style="background-color:red border-color:red"></div>
+	<table align="center" class="bar-pie table-bordered table-condensed">
+		<tr>
+			<th>Bar</th>
+			<th>Pie</th>
+		</tr>
+	</table>
+</div>
 <a href="/" class="btn btn-primary col-xs-offset-5" role="button">Back</a>
 </body>
 </html>
