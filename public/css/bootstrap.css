@@ -7128,14 +7128,14 @@ td.visible-print {
 
 
 */
-
+.image-small{
+  max-width:30%;
+}
 .rating-table{
   width:20% !important;
   margin-bottom:5px;
 }
-.bar-pie{
-  margin-top:10px !important;
-}
+
 .large-box{
   border: 5px solid gray;
 }
@@ -7156,9 +7156,10 @@ td.visible-print {
     width: 1170px;
   }
 }
+
 .rating {
     float:left;
-    width:20%;
+    width:40%;
 }
 
 .rating span { float:right; position:relative; }
@@ -7177,16 +7178,20 @@ td.visible-print {
     margin-right:2px;
     line-height:30px;
 }
+
 .rating span:hover ~ span label,
 .rating span:hover label,
 .rating span.checked label,
 .rating span.checked ~ span label {
     color:yellow;
 }
+
+/*
 .rating#anxiety{
   float:left;
   width:30%;
 }
+
 .rating span input#anxiety {
     position:absolute;
     top:0px;
@@ -7231,3 +7236,9 @@ border-radius:50%;
     height:25px;
     font-size:25px;
   }
+.rating span:hover, ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    color:yellow;
+}*/
