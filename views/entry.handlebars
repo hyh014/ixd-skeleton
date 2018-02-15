@@ -11,6 +11,9 @@
   <body>
 
     <h1 class="page-header text-center" >Log Your Meal</h1>
+    <div style="width:100%" class="col-xs-offset-5"><div style="display:inline-block"><a class="glyphicon glyphicon-question-sign" style="margin-top:60px; font-size:40px" role="button" onclick="helpEntry()"></a> </div>
+</div>
+
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
      <div class="pull-left  col-xs-offset-5" id="photo">
        <a href='#'><span class="glyphicon glyphicon-camera" style="font-size:100px;"></span></a><br/>
@@ -70,6 +73,7 @@
      </fieldset><br/>
      <a href="/index" class="btn btn-primary col-xs-offset-5" role="button">Back</a>
      <a href="/tab/diary" class="btn btn-sm btn-success" role="button" style="margin-left:12%;">Add To Diary</a>
+
   </body>
   <script src="/js/DisplayClock.js"></script>
 
@@ -77,12 +81,11 @@
 
       <script src="https://code.jquery.com/jquery.js"></script>
      <script src="/js/bootstrap.min.js"></script>
-     
-  <script>
-    $(document).ready(function(){
-    $("#question1").mouseenter(function(){
-        alert("You entered p1!");
-    });
-});
+<script>
+function helpEntry() {
+    alert("Tutorials\n\nThis page intends to help you record your meals. You record meals by either take a photo or leave some texts. And you will then do  self-rate about current mood, food taste and food healthy level."               
+      );
+}
 </script>
+  
 </html>

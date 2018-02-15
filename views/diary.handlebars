@@ -14,6 +14,8 @@
 </head>
 <body>
 <h1 class="page-header text-center" >My Diary</h1>
+<div style="width:100%" class="col-xs-offset-5"><div style="display:inline-block"><a class="glyphicon glyphicon-question-sign" style="margin-top:60px; font-size:40px" role="button" onclick="helpDairy()"></a> </div>
+</div>
 <div id="root">
 	<div class="container">
 		<div class="container photo">
@@ -66,5 +68,11 @@
 
 </div>
 <a href="/index" class="btn btn-primary col-xs-offset-5" role="button">Back</a>
+<script>
+function helpDairy() {
+    alert("Tutorials\n\nIn this page, you could view your dairy history. You could either scrolls up down or click the calendar to find one specific day."               
+      );
+}
+</script>
 </body>
 </html>
