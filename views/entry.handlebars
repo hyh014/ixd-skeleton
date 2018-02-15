@@ -7,13 +7,11 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-
   </head>
   <body>
 
     <h1 class="page-header text-center" >Log Your Meal</h1>
-    <script src="https://code.jquery.com/jquery.js"></script>
-     <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
      <div class="pull-left  col-xs-offset-5" id="photo">
        <a href='#'><span class="glyphicon glyphicon-camera" style="font-size:100px;"></span></a><br/>
         <a href='#' class="btn-info btn-lg" role="button">View Pictures</a><br/>
@@ -56,22 +54,27 @@
        </fieldset><br>
        <fieldset id="Anxiety">
          <text class="Text-input">Anxiety:</text><br/>
-         <div class="rating" id="anxiety">
-             <span><input type="radio" name="rating" id="a5" value="10"><label id="anxiety" for="a10">★</label></span>
-             <span><input type="radio" name="rating" id="a4" value="9"><label id="anxiety" for="a9">★</label></span>
-             <span><input type="radio" name="rating" id="a3" value="8"><label id="anxiety" for="a8">★</label></span>
-             <span><input type="radio" name="rating" id="a2" value="7"><label id="anxiety" for="a7">★</label></span>
-             <span><input type="radio" name="rating" id="a1" value="6"><label id="anxiety" for="a6">★</label></span>
-             <span><input type="radio" name="rating" id="a5" value="5"><label id="anxiety" for="a5">★</label></span>
-             <span><input type="radio" name="rating" id="a4" value="4"><label id="anxiety" for="a4">★</label></span>
-             <span><input type="radio" name="rating" id="a3" value="3"><label id="anxiety" for="a3">★</label></span>
-             <span><input type="radio" name="rating" id="a2" value="2"><label id="anxiety" for="a2">★</label></span>
-             <span><input type="radio" name="rating" id="a1" value="1"><label id="anxiety" for="a1">★</label></span>
+         <div class="rating container" id="anxiety" >
+             <span><input type="radio" name="rating" id="a5" value="10"><label  for="a10">★</label></span>
+             <span><input type="radio" name="rating" id="a4" value="9"><label  for="a9">★</label></span>
+             <span><input type="radio" name="rating" id="a3" value="8"><label  for="a8">★</label></span>
+             <span><input type="radio" name="rating" id="a2" value="7"><label  for="a7">★</label></span>
+             <span><input type="radio" name="rating" id="a1" value="6"><label id= for="a6">★</label></span>
+             <span><input type="radio" name="rating" id="a5" value="5"><label id= for="a5">★</label></span>
+             <span><input type="radio" name="rating" id="a4" value="4"><label id= for="a4">★</label></span>
+             <span><input type="radio" name="rating" id="a3" value="3"><label id= for="a3">★</label></span>
+             <span><input type="radio" name="rating" id="a2" value="2"><label id= for="a2">★</label></span>
+             <span><input type="radio" name="rating" id="a1" value="1"><label id= for="a1">★</label></span>
          </div>
        </div>
      </fieldset><br/>
-     <a href="/" class="btn btn-primary col-xs-offset-5" role="button">Back</a>
+     <a href="/index" class="btn btn-primary col-xs-offset-5" role="button">Back</a>
      <a href="/tab/diary" class="btn btn-sm btn-success" role="button" style="margin-left:12%;">Add To Diary</a>
   </body>
   <script src="/js/DisplayClock.js"></script>
+
+  <script src="/js/entry.js"></script>
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+     <script src="/js/bootstrap.min.js"></script>
 </html>

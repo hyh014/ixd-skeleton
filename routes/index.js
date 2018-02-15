@@ -20,9 +20,6 @@ exports.view = function(req, res){
         "id": "news"},
       { "name":"Community",
         "id":"community"},
-      { "name":"Profile",
-        "id":"profile"
-      },
       { "name":"Login",
         "id": "login"},
       {"name":"Help",
