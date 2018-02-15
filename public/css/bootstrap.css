@@ -7128,12 +7128,13 @@ td.visible-print {
 
 
 */
+
 .rating-table{
   width:20% !important;
-  padding-bottom:5px;
+  margin-bottom:5px;
 }
 .bar-pie{
-  padding-top:10px !important;
+  margin-top:10px !important;
 }
 .large-box{
   border: 5px solid gray;
